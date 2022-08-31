@@ -7,7 +7,7 @@ import 'package:redback_mobile_app/info_page.dart';
 //Please use back-end code like node js to call the actual one from RedBack operation database.
 List listData = [
   {
-    "title": 'Workout 1',
+    "title": 'Ramped Workout',
   },
   {
     "title": 'Workout 2',
@@ -62,7 +62,7 @@ class HomeContent extends StatelessWidget{
     // List constructor
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height * 0.14,
+      height: MediaQuery.of(context).size.height * 0.18,
       decoration: BoxDecoration(
         color: Color(0x1AFFFFFF),
       ),
@@ -195,13 +195,13 @@ class HomePageState extends State<HomePage> {
             ),
             child: Padding(
               padding: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
-              child: Column(
+              child: SingleChildScrollView(child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Align(
                     alignment: AlignmentDirectional(-0.9, 0),
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 100, 0, 0),
+                      padding: EdgeInsetsDirectional.fromSTEB(0,80, 0, 0),
                       child: Container(
                         width: MediaQuery.of(context).size.width * 0.5,
                         height: MediaQuery.of(context).size.height * 0.05,
@@ -260,7 +260,7 @@ class HomePageState extends State<HomePage> {
                     child: HomeContent(),
                   ),
                 ],
-              ),
+              )),
             ),
           ),
         ),
