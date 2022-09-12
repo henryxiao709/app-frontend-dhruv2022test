@@ -211,7 +211,7 @@ class HomePageState extends State<HomePage> {
                         child: Align(
                           alignment: AlignmentDirectional(-1, 0),
                           child: Text(
-                            'New Workout Yeah',
+                            'New Workout',
                             textAlign: TextAlign.start,
                             style: TextStyle(
                               fontSize: 20.0,
